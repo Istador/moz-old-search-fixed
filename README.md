@@ -2,7 +2,8 @@
 
 This Firefox add-on remembers the selected search engine by setting it as the default engine, like it was before Firefox 43.
 
-Inspired by the Firefox add-ons `Old Search Fixed` and `Old Search Fixed 2` that aren't working anymore.
+Inspired by the Firefox add-ons [Old Search](https://addons.mozilla.org/en-US/firefox/addon/old-search1/) and [Old Search Fixed 2](https://addons.mozilla.org/en-US/firefox/addon/old-search-fixed2/) that aren't working anymore.
+
 
 ## Options
 
