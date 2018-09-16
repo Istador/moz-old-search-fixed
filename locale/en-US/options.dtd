@@ -1,0 +1,19 @@
+<!ENTITY  searchbar.title "Search Bar">
+<!ENTITY  searchbar.desc  "Searching via the Search Bar saves the selected engine as the default.">
+
+<!ENTITY  searchbar.donotsearch.title "Don't search with the Search Bar engines">
+<!ENTITY  searchbar.donotsearch.desc  "Selecting an engine in the Search Bar only sets the default search engine and doesn't perform a search. A search can only be performed with the default engine then.">
+
+<!ENTITY  searchbar.icon.title "Icon">
+<!ENTITY  searchbar.icon.desc  "Show the icon of the default search engine in the Search Bar (instead of the magnifier icon).">
+
+<!ENTITY  searchbar.style.title "Style">
+<!ENTITY  searchbar.style.desc  "How to style the Search Bar popup dialog.">
+
+
+
+<!ENTITY  urlbar.title "URL Bar">
+<!ENTITY  urlbar.desc  "Searching via the URL Bar saves the selected engine as the default.">
+
+<!ENTITY  urlbar.donotsearch.title "Don't search with the URL Bar engines">
+<!ENTITY  urlbar.donotsearch.desc  "Selecting an engine in the URL Bar only sets the default search engine and doesn't perform a search. A search can only be performed with the default engine then.">

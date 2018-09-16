@@ -1,0 +1,3 @@
+content old-search-fixed ./
+locale old-search-fixed en-US locale/en-US/
+locale old-search-fixed de-DE locale/de-DE/

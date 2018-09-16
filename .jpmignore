@@ -1,0 +1,8 @@
+node_modules/
+.jpmignore
+.jpmcredentials
+.gitignore
+.git/
+Makefile
+*.zip
+*.xpi

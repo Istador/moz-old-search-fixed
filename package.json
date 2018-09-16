@@ -1,0 +1,66 @@
+{
+  "name":      "old-search-fixed",
+  "id":        "old-search-fixed@blackpinguin.de",
+  "version":   "3.0.1",
+  "license":   "MPL-2.0",
+  "keywords":  [ "firefox", "extension", "add-on", "search", "waterfox" ],
+  "homepage":  "https://github.com/istador/moz-old-search-fixed/",
+  "updateURL": "https://xpi.blackpinguin.de/old-search-fixed/updates.rdf",
+
+  "author": {
+    "name":  "Robin Christopher Ladiges",
+    "email": "rcl.moz@blackpinguin.de",
+    "url":   "https://rcl.blackpinguin.de/"
+  },
+
+  "translators": [
+    {
+      "name":  "Robin Christopher Ladiges",
+      "email": "rcl.moz@blackpinguin.de",
+      "url":   "https://rcl.blackpinguin.de/"
+    }
+  ],
+
+  "title": "Old Search Fixed 3",
+  "description": "Remembers the search engine selected by setting it as the default engine. Like before Firefox 43.",
+  
+  "locales": {
+    "de-DE": {
+      "name": "Alte Suchleiste 3",
+      "description": "Merkt sich den ausgew\u00e4hlten Suchanbieter und setzt ihn als Standard. So wie vor Firefox 43."
+    }
+  },
+
+  "icon": {
+    "32": "data/icon-32.png",
+    "48": "data/icon-48.png",
+    "64": "data/icon-64.png"
+  },
+
+  "permissions": {
+    "private-browsing": true,
+    "multiprocess": true
+  },
+
+  "hasEmbeddedWebExtension": false,
+  "unpack": true,
+  "engines": {
+    "firefox": ">=56.0"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/istador/moz-old-search-fixed.git"
+  },
+
+  "devDependencies": {
+    "jpm": "^1.3.1"
+  },
+
+  "scripts": {
+    "build": "make",
+    "make": "make",
+    "test": "make",
+    "publish": "make sign"
+  }
+}

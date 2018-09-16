@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE vbox SYSTEM "chrome://old-search-fixed/locale/options.dtd">
+
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <!-- Search Bar -->
+  <setting
+    type="bool"
+    pref="extensions.blackpinguin.oldsearchfixed.searchbar"
+    title="&searchbar.title;"
+    desc="&searchbar.desc;"
+  />
+  <setting
+    type="bool"
+    pref="extensions.blackpinguin.oldsearchfixed.searchbar.donotsearch"
+    title="&searchbar.donotsearch.title;"
+    desc="&searchbar.donotsearch.desc;"
+  />
+  <setting
+    type="bool"
+    pref="extensions.blackpinguin.oldsearchfixed.searchbar.icon"
+    title="&searchbar.icon.title;"
+    desc="&searchbar.icon.desc;"
+  />
+<!--
+  <setting
+    type="menulist"
+    pref="extensions.blackpinguin.oldsearchfixed.searchbar.style"
+    title="&searchbar.style.title;"
+    desc="&searchbar.style.desc;"
+  >
+    <menulist>
+      <menupopup>
+        <menuitem value="default" label="Default"/>
+        <menuitem value="firefox43" label="Firefox 43"/>
+      </menupopup>
+    </menulist>
+  </setting>
+-->
+
+  <!-- URL Bar -->
+  <setting
+    type="bool"
+    pref="extensions.blackpinguin.oldsearchfixed.urlbar"
+    title="&urlbar.title;"
+    desc="&urlbar.desc;"
+  />
+  <setting
+    type="bool"
+    pref="extensions.blackpinguin.oldsearchfixed.urlbar.donotsearch"
+    title="&urlbar.donotsearch.title;"
+    desc="&urlbar.donotsearch.desc;"
+  />
+</vbox>

@@ -1,0 +1,19 @@
+<!ENTITY  searchbar.title "Suchleiste">
+<!ENTITY  searchbar.desc  "Suchen mittels Suchleiste speichert die gewählte Suchmaschine als Standard.">
+
+<!ENTITY  searchbar.donotsearch.title "Nicht mit der Suchleiste suchen">
+<!ENTITY  searchbar.donotsearch.desc  "Wenn sie eine Suchmaschine in der Suchleiste wählen, wird sie als Standard gesetzt, ohne eine Suche auszuführen. Suchen ist dann nur mittels Standardsuchmaschine möglich.">
+
+<!ENTITY  searchbar.icon.title "Suchanbieter-Symbol">
+<!ENTITY  searchbar.icon.desc  "In der Suchleiste wird das Symbol der Standardsuchmaschine angezeigt (statt der Lupe).">
+
+<!ENTITY  searchbar.style.title "Darstellung">
+<!ENTITY  searchbar.style.desc  "Bestimmt wie das Aufklappmenü der Suchleiste aussehen soll.">
+
+
+
+<!ENTITY  urlbar.title "Adressleiste">
+<!ENTITY  urlbar.desc  "Suchen mittels Adressleiste speichert die gewählte Suchmaschine als Standard.">
+
+<!ENTITY  urlbar.donotsearch.title "Nicht mit der Adressleiste suchen">
+<!ENTITY  urlbar.donotsearch.desc  "Wenn sie eine Suchmaschine in der Adressleiste wählen, wird sie als Standard gesetzt, ohne eine Suche auszuführen. Suchen ist dann nur mittels Standardsuchmaschine möglich.">

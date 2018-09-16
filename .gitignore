@@ -1,0 +1,3 @@
+*.xpi
+.jpmcredentials
+node_modules/
