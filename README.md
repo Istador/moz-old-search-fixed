@@ -41,15 +41,3 @@ But forks of Firefox that still support legacy add-ons should be compatible:
 ```bash
 make
 ```
-
-
-## Open tasks and known bugs
-
-- "Search in new tab" is not changing the default engine (either by right click or by middle mouse button).
-- Search Bar Icon
-   - The icon isn't updated, if the default search engine is changed from other sources than this add-on.
-   - Add ::hover effect.
-   - Show an symbol beside the icon that indicates the popup menu.
-- New Option: select how to style the searchbar popup.
-- Open the Search Bar popup again when changing the default engine.
-   - New Option: to control wheather the Search Bar popup should be opened or not.

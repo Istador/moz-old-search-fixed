@@ -128,12 +128,3 @@ module.exports.main = (options, callback) => {
     forEachWindow(init)
   }
 }
-
-/* TODOs:
-- observe default search engine change to refresh icon
-- open the popup again after changing it, without the click handler throwing an exception
-- additional preference to control whether to close the popup or not
-- search in new tab (right click or middle mouse button)
-- hover for icon
-- custom css styles
-*/
