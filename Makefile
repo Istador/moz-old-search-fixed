@@ -23,6 +23,9 @@ force:
 	npm install
 	$(JPM) xpi
 
+.jpmcredentials:
+	touch .jpmcredentials
+
 include .jpmcredentials
 
 .PHONY: sign
