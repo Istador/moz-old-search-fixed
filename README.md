@@ -27,7 +27,7 @@ Because it's an XUL extension and not a WebExtension, this add-on is incompatibl
 
 But forks of Firefox that still support legacy add-ons should be compatible:
 
-- Waterfox
+- [Waterfox](https://www.waterfoxproject.org/)
 
 ### Used Services
 
