@@ -1,6 +1,6 @@
 "use strict"
 
-const { Cc, Ci, document } = require('chrome')
+const { Cc, Ci } = require('chrome')
 const pref = require('./prefs')('extensions.blackpinguin.oldsearchfixed')
 
 const windows   = Cc['@mozilla.org/appshell/window-mediator;1'].getService(Ci.nsIWindowMediator)
@@ -30,6 +30,7 @@ const [ inject, uninject ] = (() => {
   return [ inject, uninject ]
 })()
 
+
 // calls the callback for each browser window
 const forEachWindow = (callback) => {
   var ws = windows.getEnumerator('navigator:browser')
@@ -40,18 +41,18 @@ const forEachWindow = (callback) => {
 
 // sets the icon or resets it back to the default for search bars in all windows
 const setIcon = (val = true) => {
-  if (val && pref('searchbar.icon', true)) { 
-    forEachWindow((w) => {
-      let icon = w.BrowserSearch.searchBar.boxObject.lastChild.children[0].children[0].children[0]
-      icon.style.cssText = 'list-style: none; background-image: url(' + w.BrowserSearch.searchBar.getAttribute('src') + '); background-size: 16px; background-position: center center; background-repeat: no-repeat;'
-    })
-  }
-  else {
-    forEachWindow((w) => {
-      let icon = w.BrowserSearch.searchBar.boxObject.lastChild.children[0].children[0].children[0]
-      icon.style.cssText = ''
-    })
-  }
+  let img = search.currentEngine.iconURI.asciiSpec
+
+  let css = (
+    img && val && pref('searchbar.icon', true)
+    ? 'list-style: none; background-image: url("' + img + '"); background-size: 16px; background-position: center center; background-repeat: no-repeat;'
+    : ''
+  )
+
+  forEachWindow((w) => {
+    let icon = w.BrowserSearch.searchBar.boxObject.lastChild.children[0].children[0].children[0]
+    icon.style.cssText = css
+  })
 }
 
 
@@ -73,6 +74,8 @@ const changeEngine = (type, engine) => {
 const init = (() => {
   var initialized = []
   return (w) => {
+    if (w.BrowserSearch) { setIcon() }
+
     if (initialized.indexOf(w) !== -1) return
 
     if (w.BrowserSearch) {
@@ -83,7 +86,6 @@ const init = (() => {
           return false
         }
       })
-      setIcon()
     }
 
     if (w.gURLBar) {
