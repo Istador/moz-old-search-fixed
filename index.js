@@ -121,10 +121,8 @@ module.exports.onUnload = (reason) => {
 
 // initialize extension
 module.exports.main = (options, callback) => {
-  if (options.loadReason == "install" || options.loadReason == "startup") {
-    pref.follow()
-    pref.onchange('searchbar.icon', setIcon)
-    newWindow.register()
-    forEachWindow(init)
-  }
+  pref.follow()
+  pref.onchange('searchbar.icon', setIcon)
+  newWindow.register()
+  forEachWindow(init)
 }
